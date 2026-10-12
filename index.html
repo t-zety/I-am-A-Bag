@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Pink Bag</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="storybook">
+    <header class="top-bar">
+      <span class="pixel-heart">♥</span>
+      <h1>The Little Pink Bag</h1>
+      <button id="music-button">♫ Play Music</button>
+    </header>
+
+    <section class="scene" id="scene">
+      <div class="scene-label" id="scene-label">A Little Beginning</div>
+
+      <div class="factory" id="factory">
+        <div class="factory-window">✦</div>
+        <div class="conveyor">
+          <div class="pink-bag" id="pink-bag" aria-label="The little pink backpack">
+            <div class="bag-handle"></div>
+            <div class="bag-body">
+              <div class="bag-zip"></div>
+              <div class="bag-pocket"></div>
+            </div>
+            <div class="bag-strap left-strap"></div>
+            <div class="bag-strap right-strap"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="girl" id="girl" aria-hidden="true">👧🏻</div>
+      <div class="scene-ground"></div>
+    </section>
+
+    <section class="story-panel">
+      <p class="chapter" id="chapter">Chapter One</p>
+      <p class="story-text" id="story-text">
+        In a big factory, a beautiful pink bag was born.
+      </p>
+
+      <div class="page-controls">
+        <button id="previous-button" disabled>◀ Previous</button>
+        <span id="page-number">1 / 8</span>
+        <button id="next-button">Next ▶</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>A little story about love, memories, and a pink bag.</p>
+    </footer>
+  </main>
+
+  <audio id="background-music" loop preload="none">
+    <source src="assets/dreamy-music-box.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
